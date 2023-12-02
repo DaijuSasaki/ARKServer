@@ -1,0 +1,11 @@
+DockerでARKサーバーを立てる
+
+ホストのポート7778,27015をあけておく(tcp,udp共に)
+ディレクトリ内にあるarkmanager/instances/main.cfgの
+ark_ServerPassword="sample1234"
+ark_ServerAdminPassword="admin1234"
+の部分を好きなパスワードに変更する
+sample1234のほうがサーバーに入るときに使うパスワードでadmin1234が管理者のパスワード
+
+$ docker compose up
+でARKサーバーが立ち上がるのでSteamからIPアドレスで検索して終わり
